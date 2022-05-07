@@ -14,7 +14,7 @@ public class UserServiceApplication {
 	}
 
 	// Bean declaration for synchronous call to contact "contact service"
-	@Bean
+	@Bean 
 	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
